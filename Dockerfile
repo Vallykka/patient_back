@@ -5,7 +5,7 @@ COPY project.clj /usr/src/patient_back/
 COPY resources/ /usr/src/patient_back/resources
 COPY src/ /usr/src/patient_back/src
 
-RUN lein with-profile dev uberjar
+RUN lein uberjar
 
 FROM openjdk:16-jdk-alpine3.12
 

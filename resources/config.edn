@@ -1,0 +1,14 @@
+{
+ :db {:dbname "patient"
+      :host "localhost"
+      :user "patient"
+      :password "patient"
+      :auto-commit true
+      }
+ :migratus {:store :database
+            :migration-dir "migrations"
+            }
+ :server {:port 8080
+          :join? false
+          }
+ }
